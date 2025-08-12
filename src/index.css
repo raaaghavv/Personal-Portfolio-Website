@@ -1,12 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-IBMSans: "IBM Plex Sans", sans-serif;
+  --font-IBMMono: "IBM Plex Mono", monospace;
+  --font-PlayFair: "Playfair", serif;
+  --color-zinc-950: oklch(14.1% 0.005 285.823);
+  --color-white: #fff;
+}
 :root {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background: #fff;
+  --foreground: #09090b;
+  --primary: #09090b;
+  --primary-foreground: #fafafa;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #09090b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717b;
+  --card: #fff;
+  --card-foreground: #09090b;
+  --popover: #fff;
+  --popover-foreground: #09090b;
+  --popover-border: #e4e4e7;
+  --edge: #e4e4e7;
+  --pattern-foreground: color-mix(
+    in oklab,
+    var(--color-zinc-950) 5%,
+    transparent
+  );
+}
+.dark {
+  --background: #1c1c1e;
+  --foreground: #fafafa;
+  --primary: #fafafa;
+  --primary-foreground: #09090b;
+  --secondary: #09090b;
+  --secondary-foreground: #fafafa;
+  --muted: #1c1c1e;
+  --muted-foreground: #a1a1aa;
+  --card: #1c1c1e;
+  --card-foreground: #fafafa;
+  --popover: #09090b;
+  --popover-foreground: #fafafa;
+  --popover-border: #27272a;
+  --edge: #27272a;
+  --pattern-foreground: color-mix(in oklab, var(--color-white) 5%, transparent);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.screen-line-before::before {
+  top: calc(var(--spacing) * 0);
+  z-index: calc(0);
+  content: "";
+  background-color: var(--edge);
+  width: 200vw;
+  height: 1px;
+  position: absolute;
+  left: -100vw;
+}
+.screen-line-after::after {
+  bottom: calc(var(--spacing) * 0);
+  z-index: calc(0);
+  content: "";
+  background-color: var(--edge);
+  width: 200vw;
+  height: 1px;
+  position: absolute;
+  left: -100vw;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+li {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+h3,
+h4 {
+  font-weight: 500;
+}
