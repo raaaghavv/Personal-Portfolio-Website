@@ -14,7 +14,7 @@ export const projectsData = [
     date: "Aug 2025",
     href: "https://raghavgoel.online/",
     icon: "rg200.png",
-    description: "A minimal portfolio  website.",
+    description: "A minimal portfolio website.",
     features: [
       {
         icon: HandIcon,
