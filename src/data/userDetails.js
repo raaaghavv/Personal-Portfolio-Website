@@ -3,6 +3,7 @@ import {
   LocationIcon,
   ExternalLinkIcon,
   MailIcon,
+  BlogIcon,
 } from "../components/ui/Icons";
 
 export const userDetails = [
@@ -23,5 +24,10 @@ export const userDetails = [
     icon: ExternalLinkIcon,
     href: "https://raghavgoel.online/",
     text: "raghavgoel.online",
+  },
+  {
+    icon: BlogIcon,
+    href: "https://drive.google.com/drive/folders/176zwefbsG_pOOBEzZ9s9EnP0yeSp3EyU?usp=sharing",
+    text: "resume.drive",
   },
 ];
