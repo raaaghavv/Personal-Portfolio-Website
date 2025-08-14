@@ -8,6 +8,7 @@ import {
 import { experienceData } from "../../data/experienceData";
 import { VerifiedIcon, ChevronDownIcon } from "../ui/Icons";
 import GutterDiv from "../ui/GutterDiv";
+import { AnimatedTooltip } from "../ui/AnimatedTooltip";
 
 const Experiences = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -86,14 +87,7 @@ const Experiences = () => {
                               ))}
                             </ul>
                             <div className="mt-4 flex flex-wrap gap-2">
-                              {role.skills.map((skill) => (
-                                <span
-                                  key={skill}
-                                  className="bg-[var(--secondary)] text-[var(--secondary-foreground)] text-xs font-medium px-2.5 py-1 rounded-full"
-                                >
-                                  {skill}
-                                </span>
-                              ))}
+                              <AnimatedTooltip items={role.skills} />
                             </div>
                           </motion.div>
                         )}
