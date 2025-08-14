@@ -1,3 +1,10 @@
+import {
+  ReactIcon,
+  ReactRouterIcon,
+  CssIcon,
+  FigmaIcon,
+  ViteIcon,
+} from "../components/ui/Icons";
 export const experienceData = [
   {
     company: "craftyydrafty.in",
@@ -27,12 +34,31 @@ export const experienceData = [
           <>Engineered a client-side routing system with React Router DOM.</>,
         ],
         skills: [
-          "React.js",
-          "React-Router",
-          "JavaScript",
-          "HTML5",
-          "CSS3",
-          "Figma",
+          {
+            id: 1,
+            name: "React.js",
+            icon: ReactIcon,
+          },
+          {
+            id: 2,
+            name: "React-Router",
+            icon: ReactRouterIcon,
+          },
+          {
+            id: 3,
+            name: "CSS3",
+            icon: CssIcon,
+          },
+          {
+            id: 4,
+            name: "Figma",
+            icon: FigmaIcon,
+          },
+          {
+            id: 5,
+            name: "Vite",
+            icon: ViteIcon,
+          },
         ],
       },
     ],

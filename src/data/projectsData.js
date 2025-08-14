@@ -6,6 +6,13 @@ import {
   BoltIcon,
   SunIcon,
   VerifiedIcon,
+  ReactIcon,
+  TailwindCssIcon,
+  FramerIcon,
+  ViteIcon,
+  ReduxIcon,
+  ChartJsIcon,
+  LocalStorageIcon,
 } from "../components/ui/Icons";
 
 export const projectsData = [
@@ -39,11 +46,31 @@ export const projectsData = [
     ],
     supporters: [],
     skills: [
-      "React.js",
-      "Tailwind CSS v4",
-      "Motion",
-      "Vite",
-      "LocalStorage API",
+      {
+        id: 1,
+        name: "React.js",
+        icon: ReactIcon,
+      },
+      {
+        id: 2,
+        name: "Tailwind CSS",
+        icon: TailwindCssIcon,
+      },
+      {
+        id: 3,
+        name: "Vite",
+        icon: ViteIcon,
+      },
+      {
+        id: 4,
+        name: "LocalStorage API",
+        icon: LocalStorageIcon,
+      },
+      {
+        id: 5,
+        name: "Motion",
+        icon: FramerIcon,
+      },
     ],
   },
   {
@@ -73,11 +100,31 @@ export const projectsData = [
     ],
     supporters: [],
     skills: [
-      "React.js",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "Vite",
-      "LocalStorage API",
+      {
+        id: 1,
+        name: "React.js",
+        icon: ReactIcon,
+      },
+      {
+        id: 2,
+        name: "Redux Toolkit",
+        icon: ReduxIcon,
+      },
+      {
+        id: 3,
+        name: "LocalStorage API",
+        icon: LocalStorageIcon,
+      },
+      {
+        id: 4,
+        name: "Vite",
+        icon: ViteIcon, 
+      },
+      {
+        id: 5,
+        name: "Tailwind CSS",
+        icon: TailwindCssIcon,
+      },
     ],
   },
   {
@@ -106,6 +153,32 @@ export const projectsData = [
       },
     ],
     supporters: [],
-    skills: ["React.js", "Redux Toolkit", "Chart.js", "Tailwind CSS", "Vite"],
+    skills: [
+      {
+        id: 1,
+        name: "React.js",
+        icon: ReactIcon,
+      },
+      {
+        id: 2,
+        name: "Redux Toolkit",
+        icon: ReduxIcon,
+      },
+      {
+        id: 3,
+        name: "Tailwind CSS",
+        icon: TailwindCssIcon,
+      },
+      {
+        id: 4,
+        name: "Vite",
+        icon: ViteIcon,
+      },
+      {
+        id: 5,
+        name: "Chart.js",
+        icon: ChartJsIcon,
+      },
+    ],
   },
 ];
